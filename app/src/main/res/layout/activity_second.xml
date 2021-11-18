@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".SecondActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:hint="Enter number"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edit2"
+            android:background="@drawable/custom_input"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/edit1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:gravity="center"
+            android:hint="Enter number" />
+
+        <Button
+            android:id="@+id/btnM"
+            android:layout_toRightOf="@+id/edit1"
+            android:layout_marginLeft="20dp"
+            android:background="@color/teal_700"
+            android:layout_alignBottom="@+id/edit1"
+            android:layout_marginRight="30dp"
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:text="Multiply" />
+
+        <Button
+            android:id="@+id/btnD"
+            android:layout_toRightOf="@+id/edit2"
+            android:layout_marginLeft="20dp"
+            android:background="@color/teal_700"
+            android:layout_alignBottom="@+id/edit2"
+            android:layout_marginRight="30dp"
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:text="Divide" />
+
+        <Button
+            android:id="@+id/btnA"
+            android:layout_below="@id/edit2"
+            android:layout_marginTop="30dp"
+            android:background="@color/teal_700"
+            android:layout_marginLeft="30dp"
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/btnS"
+            android:layout_width="170dp"
+            android:layout_alignRight="@+id/btnD"
+            android:layout_height="60dp"
+            android:layout_below="@id/edit2"
+            android:background="@color/teal_700"
+            android:layout_alignBottom="@+id/btnA"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/btnA"
+            android:text="Subtract" />
+
+        <TextView
+            android:id="@+id/ResultTv"
+            android:layout_width="313dp"
+            android:layout_height="81dp"
+            android:layout_below="@id/btnA"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="61dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

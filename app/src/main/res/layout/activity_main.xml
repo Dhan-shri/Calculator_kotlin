@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter number"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editSecond"
+            android:background="@drawable/custom_input"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/editFirst"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:gravity="center"
+            android:hint="Enter number" />
+
+        <Button
+            android:id="@+id/btnMulti"
+            android:layout_toRightOf="@+id/editFirst"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@+id/editFirst"
+            android:layout_marginRight="30dp"
+            android:background="@color/teal_700"
+            android:layout_width="170dp"
+            android:layout_height="70dp"
+            android:text="Multiply" />
+
+        <Button
+            android:id="@+id/btnDiv"
+            android:layout_toRightOf="@+id/editSecond"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@+id/editSecond"
+            android:layout_marginRight="30dp"
+            android:layout_width="170dp"
+            android:background="@color/teal_700"
+            android:layout_height="70dp"
+            android:text="Divide" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="170dp"
+            android:background="@color/teal_700"
+            android:layout_height="70dp"
+            android:layout_below="@id/editSecond"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/btnSub"
+            android:layout_width="170dp"
+            android:layout_alignRight="@+id/btnDiv"
+            android:layout_height="70dp"
+            android:layout_below="@id/editSecond"
+            android:layout_alignBottom="@+id/btnAdd"
+            android:background="@color/teal_700"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/btnAdd"
+            android:text="Subtract" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="313dp"
+            android:layout_height="81dp"
+            android:layout_below="@id/btnAdd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="61dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="next" />
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
